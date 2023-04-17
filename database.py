@@ -37,7 +37,6 @@ SELECT_WATCHED_MOVIES = """
     WHERE users.username = %s;
 """
 INSERT_WATCHED_MOVIE = "INSERT INTO watched (user_username, movie_id) VALUES (%s, %s);"
-SET_MOVIE_WATCHED = "UPDATE movies SET watched = 1 WHERE title = %s;"
 SEARCH_MOVIES = "SELECT * FROM movies WHERE title LIKE %s;"
 CREATE_RELEASE_INDEX = "CREATE INDEX IF NOT EXISTS idx_movies_release ON movies(release_timestamp);"
 
